@@ -63,26 +63,21 @@ to the following URLs:
 * To query the search API: `https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=<search-term>`
 
 In addition to making calls to these URLs, you will need to request an API key
-from [here](https://developer.nytimes.com/signup). Once you have the key, you
+from [here](https://developer.nytimes.com/accounts/create). Once you have the key, you
 will "sign" your requests by attaching the key to the URL like so:
 
 ```
 https://api.nytimes.com/svc/movies/v2/reviews/all.json?api-key=<your key here>
 ```
-
-For fetching from the API, make sure to use
-[isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch), which
-provides a particularly nice API.
-
 For further information about the _New York Times_ Movie Reviews API — including
 a sandbox where you can view the data that the API returns — please consult
 [their
-documentation](http://developer.nytimes.com/movie_reviews_v2.json#/Documentation/GET/reviews/search.json).
+documentation](https://developer.nytimes.com/docs/movie-reviews-api/1/overview).
 
 ## Resources
 
 - [Container Components](https://medium.com/@learnreact/container-components-c0e67432e005#.2kd1wuyp4)
 - [CSS Tricks: Container Components](https://css-tricks.com/learning-react-container-components/)
-- [_New York Times_ Movie Reviews API Documentation](http://developer.nytimes.com/movie_reviews_v2.json#/Documentation)
+- [_New York Times_ Movie Reviews API Documentation](https://developer.nytimes.com/docs/movie-reviews-api/1/overview)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/react-container-components-lab'>Container Components Lab</a> on Learn.co and start learning to code for free.</p>
