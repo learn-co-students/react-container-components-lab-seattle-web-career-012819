@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import MovieReviews from './MovieReviews'
+import Key from './key.js'
 
-const NYT_API_KEY = 'N2erDi30ylvZUw4CHn0n83YHVTL0uEUu';
+const NYT_API_KEY = Key;
 const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'+ `api-key=${NYT_API_KEY}`;
 
 // Code LatestMovieReviewsContainer Here
@@ -16,6 +17,7 @@ class LatestMovieReviewsContainer extends Component {
 
 
 componentDidMount(){
+  console.log(Key)
   fetch(URL)
   .then(res => res.json())
   .then(reviews => {
