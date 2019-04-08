@@ -1,0 +1,91 @@
+.movie-reviews {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: "searchbar" "found-reviews";
+  background-color: #333333;
+  color: white;
+  align-items: center;
+  align-content: center;
+}
+
+.movie-review {
+  display: flex;
+  flex-flow: column;
+  height: 400px;
+  width: 300px;
+  margin: 5px;
+  background-color: #fafafa;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, .2);
+  outline: 1px solid lightgrey;
+}
+
+.movie-review:hover {
+  animation-duration: .2s;
+  animation-name: grow;
+  transform: scale(1.08);
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1)
+  }
+
+  to {
+    transform: scale(1.08)
+  }
+}
+
+.movie-search-form {
+  grid-area: "searchbar";
+  display: block;
+  padding: 10px;
+  
+}
+
+.movie-search-form label {
+  margin-right: 10px;
+}
+.movie-search-form input {
+  margin-right: 10px;
+}
+
+.nyt {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.movie-review-text-content {
+  margin: 10px;
+  align: center;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;  
+}
+.movie-review-img {
+  width: 100%;
+}
+
+h1.title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.movie-review-url {
+  color: #000;
+  text-decoration: none;
+}
+.movie-review-url:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 0, 0, .3)
+}
+
+.latest-movie-reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
+.found-movie-reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
